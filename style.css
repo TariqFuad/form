@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-image: url('images/Gym.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+html{
+    font-size: 10px;
+}
+
+.container{
+    width: 50%;
+    min-height: 60vh; /* Changed from height: 100vh for better centering */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.4); /* Increased opacity for readability */
+    margin: 30px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Subtle shadow for contrast */
+    border-radius: 20px; /* Rounded corners for a modern look */
+    padding: 40px 20px; /* Padding for spacing inside the container */
+}
+
+h1{
+    color: black;
+    font-size: 6rem;
+    text-align: center;
+    font-family: "roboto", sans-serif;
+}
+h2{
+    color: black ;
+    font-size: 4rem;
+    text-align: center;
+    font-family: "bebas neue", sans-serif;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 80%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.6rem;
+}
+.submit-button{
+    width: 70%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+.login-button{
+    width: 70%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(66, 64, 64);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    padding: 10px;
+}
+.form-links {
+    margin-top: 20px; /* Space above the links */
+    text-align: center;
+}
+.form-links a {
+    color: #222;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    padding: 6px 12px;
+    margin: 0 4px;
+    font-size: 1.6rem;
+    transition: background 0.2s, color 0.2s;
+}
+.form-links a:hover {
+    background: #222;
+    color: #fff;
+}
+.login-button:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+.submit-button:hover {
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
+@media screen and (max-width: 800px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    h1 {
+        font-size: 4rem; /* Smaller font size for headings */
+    }
+    h2 {
+        font-size: 3rem; /* Smaller font size for subheadings */
+    }
+    input, .submit-button, .login-button {
+        width: 90%; /* Full width on smaller screens */
+        font-size: 1.4rem; /* Smaller font size for inputs and buttons */
+    }
+     .form-links a{
+        font-size: 1rem; /* Smaller font size for links */
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust width for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+    h1 {
+        font-size: 4rem; /* Smaller font size for headings */
+    }
+    h2 {
+        font-size: 3rem; /* Smaller font size for subheadings */
+    }
+    input, .submit-button, .login-button {
+        width: 90%; /* Full width on smaller screens */
+        font-size: 1.4rem; /* Smaller font size for inputs and buttons */
+    }
+     .form-links a{
+        font-size: 1rem; /* Smaller font size for links */
+    }
+    
+}
+@media screen  and (max-width: 480px) {
+    h1 {
+        font-size: 3rem; /* Further reduce font size for very small screens */
+    }
+    h2 {
+        font-size: 2.5rem; /* Further reduce subheading size */
+    }
+    input, .submit-button, .login-button {
+        width: 95%; /* Almost full width on very small screens */
+        font-size: 1.2rem; /* Smaller font size for inputs and buttons */
+    }
+    .form-links a{
+        font-size: 1rem; /* Smaller font size for links */
+    }
+}
+@media screen and (max-width: 360px) {
+    h1 {
+        font-size: 2.5rem; /* Further reduce font size for very small screens */
+    }
+    h2 {
+        font-size: 2rem; /* Further reduce subheading size */
+    }
+    input, .submit-button, .login-button {
+        width: 95%; /* Almost full width on very small screens */
+        font-size: 1.2rem; /* Smaller font size for inputs and buttons */
+    }
+    .form-links a{
+        font-size: 1rem; /* Smaller font size for links */
+    }
+}
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 2rem; /* Further reduce font size for very small screens */
+    }
+    h2 {
+        font-size: 1.8rem; /* Further reduce subheading size */
+    }
+    input, .submit-button, .login-button {
+        width: 95%; /* Almost full width on very small screens */
+        font-size: 1.2rem; /* Smaller font size for inputs and buttons */
+    }
+    .form-links a{
+        font-size: 1rem; /* Smaller font size for links */
+    }
+}
